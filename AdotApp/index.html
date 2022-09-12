@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <title>AdotApp</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="/">AdotApp</a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="feed.html"><button style="width:auto;">Adotar</button></a></li>
+        <li><button onclick="document.getElementById('idlog').style.display='block'" style="width:auto;">Entrar</button>
+        </li>
+        <li><button onclick="document.getElementById('idcad').style.display='block'"
+            style="width:auto;">Cadastrar</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div id="idlog" class="modal">
+
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('idlog').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+        <img src="img/logo.png" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <label for="uemail"><b>Email:</b></label>
+        <input type="text" placeholder="Coloque seu email" name="uemail" required>
+
+        <label for="psw"><b>Senha:</b></label>
+        <input type="password" placeholder="Coloque sua senha" name="psw" required>
+
+        <span class="psw">Esqueceu a<a href="#"> Senha?</a></span>
+
+        <button type="submit">Entrar</button>
+        <label><input type="checkbox" name="remember"> Lembrar-me</label>
+
+      </div>
+    </form>
+  </div>
+  <div id="idcad" class="modal">
+
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('idcad').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+        <img src="img/logo.png" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Nome:</b></label>
+        <input type="text" placeholder="Coloque seu nome" name="uname" required>
+
+        <label for="uname"><b>Email:</b></label>
+        <input type="text" placeholder="Coloque seu email" name="uemail" required>
+
+        <label for="psw"><b>Senha:</b></label>
+        <input type="password" placeholder="Coloque sua senha" name="psw" required>
+
+        <label for="confirmpsw"><b>Confirmar Senha:</b></label>
+        <input type="password" placeholder="Confirme sua senha" name="confirmpsw" required>
+
+        <button type="submit">Cadastrar</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    var modal = document.getElementById('idlog');
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+  <main>
+    <div class="balao">
+      <img src="img/balaotexto.png" alt="Balao de texto">
+    </div>
+  </main>
+  
+  <footer>
+    <div class="main-content">
+      <div class="left box">
+        <h2> Sobre nós</h2>
+        <div class="content">
+          <p>Somos uma equipe de desenvolvedores e fizemos esse projeto como parte do nosso TCC do curso de
+            Desenvolvimento de Sistemas da Escola ETEC Ary de Camargo Pedroso. </p>
+
+          <div class="social">
+            <a href="#"><span class="fab fa-twitter"></span></a>
+            <a href="#"><span class="fab fa-instagram"></span></a>
+            <a href="#"><span class="fab fa-youtube"></span></a>
+          </div>
+        </div>
+      </div>
+      <!--left box-->
+      <div class="center box">
+        <h2>Contato</h2>
+        <div class="content">
+          <div class="place">
+            <span class="fas fa-map-marker"></span>
+            <span class="text">Piracicaba</span>
+          </div>
+
+          <div class="phone">
+            <span class="fas fas fa-phone-alt"></span>
+            <span class="text">+55 19 99704-1813</span>
+          </div>
+
+          <div class="email">
+            <span class="fas fa-envelope"></span>
+            <span class="text">contaadot@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--main-content-->
+    <div class="bottom">
+      <div class="center">
+        <span class="credit">Criado por <a href="#">AdotApp</a></span>
+        <span class="far fa-copyright">ETEC Dep. Ary de Camargo Pedroso</span>
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="js/mobile-navbar.js"></script>
+  <script src="js/modalclose.js"></script>
+</body>
+
+</html>

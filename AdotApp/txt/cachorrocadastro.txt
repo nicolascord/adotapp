@@ -1,0 +1,32 @@
+<br>
+<label for="NomeAnimal"><b>Nome do Animal:</b></label>
+<input type="text" placeholder="Coloque o nome" name="Nome" required> <br>
+<br>
+
+<label for="IdadeAnimal"><b>Idade do Animal:</b></label>
+<input type="text" placeholder="Coloque aqui a idade" name="IdadeAnimal" required><br>
+<br>
+
+<!--colocar select com vacinas-->
+<label for="confirmpsw"><b>Vacinação e Informações Complementares:</b></label><br>
+<input type="checkbox" id="v8" name="V8" value="seco">
+<label for="vac">Vacina V8</label><br>
+<input type="checkbox" id="v10" name="V10" value="seco">
+<label for="vac">Vacina V10</label><br>
+<input type="checkbox" id="v12" name="V12" value="seco">
+<label for="vac">Vacina V12</label><br>
+<input type="checkbox" id="verm" name="Vermifugado" value="seco">
+<label for="vac">Vermifugado</label><br>
+<input type="checkbox" id="castr" name="Castrado" value="seco">
+<label for="vac">Castrado</label><br>
+<br>
+
+<b>Sexo:</b> <br>
+<input type="radio" id="MascSexo" name="fav_language" value="MascSexo">
+<label for="MascSexo">Masculino</label><br>
+<input type="radio" id="FemSexo" name="fav_language" value="FemSexo">
+<label for="FemSexo">Feminino</label> <br>
+<br>
+
+<b>Adicione uma foto de seu animal:</b><br>
+<input type="file" id="fotoanimal" name="fotoanimal"><br><br>

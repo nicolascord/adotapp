@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+    color: #3cbbb2;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 1;
+  }
+  
+  .logo {
+    font-size: 24px;
+    letter-spacing: 4px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background: #ffffff;
+    height: 8vh;
+  }
+  
+  main {
+    background-color: #3cbbb2;
+    height: 92vh;
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+
+  .bttadd {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    background-color: #ffffff;
+    color: #3cbbb2;
+    padding: 9px 11px;
+    margin: 40px 40px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  *main.feed.post {
+    
+    height: 10px;
+    width: 10px;
+  }
+
+
+
+
+
+  /* essa parte é do formulario de adicioar animal */
+  .modal {
+    font-family: 'Montserrat', sans-serif;
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #fefefe;
+    width: 30%;
+  }
+
+  .close {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {
+      -webkit-transform: scale(0)
+    }
+  
+    to {
+      -webkit-transform: scale(1)
+    }
+  }
+  
+  @keyframes animatezoom {
+    from {
+      transform: scale(0)
+    }
+  
+    to {
+      transform: scale(1)
+    }
+  }
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.bttsub {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 21px;
+  background-color: #00ffaa;
+  color: #ffffff;
+  padding: 6px 10px;
+  margin: 8px 0;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+  /*Fotos Animais*/
+.wrapper{
+align-items: flex-end;
+max-height: 580px;
+display: flex;
+overflow-x: auto;
+}
+
+.wrapper .item{
+  min-width: 400px;
+  height: 200px;
+  line-height: 400px;
+  border-radius: 50px 20px;
+  text-align: center;
+  background-color: #ddd;
+}
+
+.wrapperimg{
+  padding: 5px 15px;
+}
+img {
+  border-radius: 25px;
+}
+  /*Scrollbar*/
+.wrapper::-webkit-scrollbar{
+  visibility: hidden;
+  width: 0px;
+  height: 10px;
+  border-radius: 50px 20px;
+}
+
+
+.wrapper::-webkit-scrollbar-thumb{
+  background-color: #ffffff;
+  border-radius: 50px 50px;
+  width: 80px;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <title>Adote</title>
+  <link rel="stylesheet" href="css/stylefeed.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="index.html">AdotApp</a>
+    </nav>
+  </header>
+  <main>
+    <div>
+      <ul><button class="bttadd" onclick="document.getElementById('idcad').style.display='block'"
+          style="width:auto;">Adicionar Animal</button>
+      </ul>
+    </div>
+
+    <!--FEED HORIZONTAL N MEXE AQUI-->
+    <div class="wrapper">
+      <div class="wrapperimg">
+        <a class="imgcontainer" href="details.html">
+          <img src="https://royalpets.vteximg.com.br/arquivos/ids/238689-510-640/-c-i-cinto_para_caes_preto.jpg?v=637686961444430000" style="width: 500px; height: 495px;" alt="arte do pedro" />
+        </a>
+      </div>
+      
+      <div class="wrapperimg">
+        <a class="imgcontainer" href="index.html">
+          <img src="img/pedrobosta.jpg" style="width: 500px; height: 495px;" alt="arte do pedro" />
+        </a>
+      </div>
+      <div class="wrapperimg">
+        <a class="imgcontainer" href="index.html">
+          <img src="img/pedrobosta.jpg" style="width: 500px; height: 495px;" alt="arte do pedro" />
+        </a>
+      </div>
+      <div class="wrapperimg">
+        <a class="imgcontainer" href="index.html">
+          <img src="img/pedrobosta.jpg" style="width: 500px; height: 495px;" alt="arte do pedro" />
+        </a>
+      </div>
+      <div class="wrapperimg">
+        <a class="imgcontainer" href="index.html">
+          <img src="img/pedrobosta.jpg" style="width: 500px; height: 495px;" alt="arte do pedro" />
+        </a>
+      </div>
+      <div class="wrapperimg">
+        <a class="imgcontainer" href="index.html">
+          <img src="img/pedrobosta.jpg" style="width: 500px; height: 495px;" alt="arte do pedro" />
+        </a> 
+
+
+      </div>
+      <div id="idcad" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('idcad').style.display='none'" class="close"
+              title="Close Modal">&times;</span>
+          </div>
+
+
+          <div class="container">
+            <b>Selecione o Animal:</b> <br>
+            <input type="radio" id="dog" name="TipoAnimal" value="CachorroCad" onclick="loadDog()">
+            <label for="dog">Cachorro</label><br>
+            <input type="radio" id="cat" name="TipoAnimal" value="GatoCad" onclick="loadCat()">
+            <label for="cat">Gato</label> <br>
+            <div id="resposta"></div>
+
+
+            <script>
+              function loadDog() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                  if (this.readyState == 4 && this.status == 200) {
+                    let div = document.createElement('div');
+                    div.innerHTML = this.responseText;
+                    document.querySelector('div#resposta').replaceChildren(div);
+                  }
+                };
+                xhttp.open("GET", "txt/cachorrocadastro.txt", true);
+                xhttp.send();
+              }
+              function loadCat() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                  if (this.readyState == 4 && this.status == 200) {
+                    let div = document.createElement('div');
+                    div.innerHTML = this.responseText;
+                    document.querySelector('div#resposta').replaceChildren(div);
+                  }
+                };
+                xhttp.open("GET", "txt/gatocadastro.txt", true);
+                xhttp.send();
+              }
+            </script>
+            <br>
+            <button class="bttsub" style="vertical-align:middle" type="submit"><span>Adicionar</span></button>
+        </form>
+      </div>
+  </main>
+</body>
+
+</html>
