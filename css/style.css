@@ -31,7 +31,7 @@ nav {
 }
 
 main {
-  background: url(/AdotApp/img/background.jpg) no-repeat center center;
+  background: url(/img/background.jpg) no-repeat center center;
   background-size: cover;
   height: 92vh;
 }

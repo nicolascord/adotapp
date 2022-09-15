@@ -32,7 +32,7 @@ a {
   
   main {
     background-color: #3cbbb2;
-    height: 92vh;
+    height: 100vh;
   }
 
   .nav-list {
@@ -175,7 +175,7 @@ overflow-x: auto;
   padding: 5px 15px;
 }
 img {
-  border-radius: 25px;
+  border-radius: 20px;
 }
   /*Scrollbar*/
 .wrapper::-webkit-scrollbar{
@@ -183,6 +183,7 @@ img {
   width: 0px;
   height: 10px;
   border-radius: 50px 20px;
+  color: red;
 }
 
 
