@@ -100,3 +100,12 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+
+.tituloanimal {
+  height: 5vh;
+  margin-left: 130vh;
+  margin-top: 5vh;
+ width: 5vh;
+
+}
