@@ -47,11 +47,11 @@ main {
 
 
 .swipperteste {
-   height: 80vh;
-   margin-left: 10vh;
-   margin-top: 6vh;
+  height: 80vh;
+  margin-left: 10vh;
+  margin-top: -9vh;
   width: 80vh;
-
+  display: inline-flex;
 }
 
 html,
@@ -59,7 +59,7 @@ body {
   position: relative;
   height: 100%;
 }
- 
+
 body {
   background-color: #3cbbb2;
   font-family: 'Montserrat', sans-serif;
@@ -103,9 +103,12 @@ body {
 
 
 .tituloanimal {
+  display: flex;
   height: 5vh;
-  margin-left: 130vh;
-  margin-top: 5vh;
- width: 5vh;
-
+  margin-left: 100vh;
+  margin-top: 10vh;
+  width: 5vh;
+  color: #ffffff;
+  font-size: 40px;
 }
+
