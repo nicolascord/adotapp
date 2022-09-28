@@ -29,4 +29,5 @@
 <br>
 
 <b>Adicione uma foto de seu animal:</b><br>
-<input type="file" id="fotoanimal" name="fotoanimal"><br><br>
+<input type="file" id="fotoanimal" accept="image/*" name="fotoanimal"><br><br> 
+
